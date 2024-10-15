@@ -11,6 +11,25 @@ mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
+// animasi idle
+const script = document.createElement('script');
+script.src = 'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js';
+script.onload = animateIdle;
+document.head.appendChild(script);
+
+function animateIdle() {
+    const imgElement = document.getElementById('idleImage');
+
+    anime({
+        targets: imgElement,
+        translateY: [
+            { value: -25, duration: 1000, easing: 'easeInOutQuad' },
+            { value: 0, duration: 1000, easing: 'easeInOutQuad' }
+        ],
+        loop: true
+    });
+}
+
 const contentMendapatkanAkun = `
     <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
         <div class="text-blue-600 mb-4">

@@ -8,7 +8,7 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-white py-4 mb-8 px-6 shadow-md w-full z-10">
+    <nav class="bg-white py-4 lg:mb-8 px-6 shadow-md w-full z-10">
         <div class="max-w-7xl mx-auto">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-10">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
                     <div class="h-60 lg:h-96 flex items-center justify-center">
-                        <img src="/img/logo-pnb.png" alt="Logo PNB" class="max-h-full max-w-full object-contain">
+                        <img src="/img/logo-pnb.png" id="idleImage" alt="Logo PNB" class="max-h-full max-w-full object-contain">
                     </div>
                 </div>
             </div>
