@@ -6,7 +6,14 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto']
+      },
+      screens: {
+        'lg-lite': '930px'
+      }
+    },
   },
   plugins: [],
 }

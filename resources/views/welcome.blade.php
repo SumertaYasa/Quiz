@@ -4,90 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNB Quiz - Platform Quiz Interaktif Politeknik Negeri Bali</title>
-    @vite('resources/css/welcome.css')
+    @vite('resources/css/app.css')
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="bg-white py-4 px-6 shadow-md w-full z-10">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-center">
+    <nav class="nav-welcome ">
+        <div class="mx-auto max-w-7xl mobile-menu">
+            <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-10">
-                    <span class="text-blue-600 text-3xl font-bold">PNB Quiz</span>
-                    <div class="hidden md:flex space-x-8">
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Beranda</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Kategori Quiz</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Leaderboard</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Buat Quiz</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Bantuan</a>
+                    <span class="text-3xl font-bold text-blue-600">PNB Quiz</span>
+                    <div class="hidden space-x-8 lg-lite:flex">
+                        <a href="#" class="navList-welcome">Beranda</a>
+                        <a href="#" class="navList-welcome">Kategori Quiz</a>
+                        <a href="#" class="navList-welcome">Leaderboard</a>
+                        <a href="#" class="navList-welcome">Buat Quiz</a>
+                        <a href="#" class="navList-welcome">Bantuan</a>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
+                <div class="items-center hidden space-x-6 lg-lite:flex">
                     <a href="#" class="text-gray-600 hover:text-gray-900">Cari Quiz</a>
-                    <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Masuk</a>
+                    <a href="#" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
-                <div class="md:hidden">
+                <div class="lg-lite:hidden">
                     <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-600">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="md:hidden hidden mt-4">
+            <div id="mobile-menu" class="hidden mt-4 lg-lite:hidden">
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Beranda</a>
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Kategori Quiz</a>
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Leaderboard</a>
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Buat Quiz</a>
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Bantuan</a>
                 <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Cari Quiz</a>
-                <a href="#" class="block py-2 bg-blue-600 text-white px-4 rounded-md hover:bg-blue-700 transition duration-300">Masuk</a>
+                <a href="#" class="block px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
             </div>
         </div>
     </nav>
 
 
 
-    <main class="bg-gray-500 text-white pb-32 lg:pt-8">
-        <div class="max-w-7xl mx-auto px-6 pt-10">
+    <main class="pb-32 text-white bg-[#3434bf] lg:pt-8">
+        <div class="px-6 pt-10 mx-auto max-w-7xl">
             <div class="flex flex-col lg:flex-row lg:items-center">
                 <div class="lg:w-1/2 lg:pr-16">
-                    <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                    <h1 class="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
                         Uji Pengetahuanmu dengan <span class="text-blue-400">PNB Quiz</span>
                     </h1>
-                    <p class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                    <p class="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
                         "Belajar jadi lebih seru dan menantang!"
                     </p>
-                    <p class="text-xl mb-6">
+                    <p class="mb-6 text-xl">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="text-lg mb-8">
+                    <p class="mb-8 text-lg">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
-                    <div class="flex space-x-4 mb-8">
-                        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-center">
+                    <div class="flex mb-8 space-x-4">
+                        <a href="#" class="px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">
                             <span class="block font-semibold">MULAI QUIZ</span>
                             <span class="text-sm">Gratis</span>
                         </a>
-                        <a href="#" class="bg-gray-200 text-blue-700 px-6 py-3 rounded-md hover:bg-gray-300 transition duration-300 text-center">
+                        <a href="#" class="px-6 py-3 text-center text-blue-700 transition duration-300 bg-gray-200 rounded-md hover:bg-gray-300">
                             <span class="block font-semibold">BUAT QUIZ</span>
                             <span class="text-sm">Untuk Dosen</span>
                         </a>
                     </div>
                 </div>
-                <div class="lg:w-1/2 mt-12 lg:mt-0">
-                    <div class="h-60 lg:h-96 flex items-center justify-center">
-                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="max-h-full max-w-full object-contain">
+                <div class="mt-12 lg:w-1/2 lg:mt-0">
+                    <div class="flex items-center justify-center h-60 lg:h-96">
+                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full">
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="relative z-20 -mt-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="bg-blue-600 rounded-lg shadow-lg text-white py-8 px-8">
-                <div class="flex flex-wrap justify-between items-center -mx-4">
-                    <div class="w-full sm:w-1/3 px-4 mb-6 sm:mb-0">
+    <div class="relative z-20 px-6 -mt-20">
+        <div class="mx-auto max-w-7xl">
+            <div class="px-8 py-8 text-white bg-blue-600 rounded-lg shadow-lg">
+                <div class="flex flex-wrap items-center justify-between -mx-4">
+                    <div class="w-full px-4 mb-6 sm:w-1/3 sm:mb-0">
                         <div class="flex items-center">
                             <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full sm:w-1/3 px-4 mb-6 sm:mb-0">
+                    <div class="w-full px-4 mb-6 sm:w-1/3 sm:mb-0">
                         <div class="flex items-center">
                             <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full sm:w-1/3 px-4">
+                    <div class="w-full px-4 sm:w-1/3">
                         <div class="flex items-center">
                             <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
@@ -125,38 +125,38 @@
         </div>
     </div>
 
-    <section class="bg-white py-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Panduan Singkat Penggunaan PNB Quiz</h2>
+    <section class="px-6 py-24 bg-white">
+        <div class="mx-auto max-w-7xl">
+            <h2 class="mb-12 text-3xl font-bold text-center text-gray-900">Panduan Singkat Penggunaan PNB Quiz</h2>
 
-            <div class="flex justify-center space-x-4 mb-12">
-                <button id="btn-mendapatkan-akun" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Mendaftar Akun</button>
-                <button id="btn-masuk-sistem" class="text-blue-600 bg-blue-100 font-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Masuk Sistem</button>
-                <button id="btn-buku-panduan" class="text-blue-600 bg-blue-100 font-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Buku Panduan</button>
+            <div class="flex justify-center mb-12 space-x-4">
+                <button id="btn-mendapatkan-akun" class="px-6 py-3 font-bold text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Mendaftar Akun</button>
+                <button id="btn-masuk-sistem" class="px-6 py-3 font-bold text-blue-600 transition duration-300 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Masuk Sistem</button>
+                <button id="btn-buku-panduan" class="px-6 py-3 font-bold text-blue-600 transition duration-300 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Buku Panduan</button>
             </div>
 
-            <div id="panduan-content" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="panduan-content" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Content will be added dynamically -->
             </div>
         </div>
     </section>
 
-    <section class="bg-blue-600 py-16 px-6">
+    <section class="px-6 py-16 bg-blue-600">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">Siap untuk Meningkatkan Pengetahuanmu?</h2>
-            <p class="text-xl text-blue-100 mb-8">Bergabunglah dengan ribuan mahasiswa PNB yang telah merasakan manfaat belajar interaktif melalui PNB Quiz!</p>
-            <a href="#" class="bg-white text-blue-600 px-8 py-3 rounded-md text-lg font-semibold hover:bg-blue-50 transition duration-300">Daftar Sekarang</a>
+            <h2 class="mb-6 text-3xl font-bold text-white">Siap untuk Meningkatkan Pengetahuanmu?</h2>
+            <p class="mb-8 text-xl text-blue-100">Bergabunglah dengan ribuan mahasiswa PNB yang telah merasakan manfaat belajar interaktif melalui PNB Quiz!</p>
+            <a href="#" class="px-8 py-3 text-lg font-semibold text-blue-600 transition duration-300 bg-white rounded-md hover:bg-blue-50">Daftar Sekarang</a>
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-8 px-6">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between">
-            <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                <h3 class="text-2xl font-bold mb-4">PNB Quiz</h3>
+    <footer class="px-6 py-8 text-white bg-gray-800">
+        <div class="flex flex-wrap justify-between mx-auto max-w-7xl">
+            <div class="w-full mb-6 md:w-1/4 md:mb-0">
+                <h3 class="mb-4 text-2xl font-bold">PNB Quiz</h3>
                 <p class="text-gray-400">Platform quiz interaktif untuk mahasiswa Politeknik Negeri Bali.</p>
             </div>
-            <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+            <div class="w-full mb-6 md:w-1/4 md:mb-0">
+                <h4 class="mb-4 text-lg font-semibold">Tautan Cepat</h4>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
                     <li><a href="#" class="text-gray-400 hover:text-white">Kategori Quiz</a></li>
@@ -164,8 +164,8 @@
                     <li><a href="#" class="text-gray-400 hover:text-white">Bantuan</a></li>
                 </ul>
             </div>
-            <div class="w-full md:w-1/4 mb-6 md:mb-0">
-                <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+            <div class="w-full mb-6 md:w-1/4 md:mb-0">
+                <h4 class="mb-4 text-lg font-semibold">Kontak</h4>
                 <ul class="space-y-2">
                     <li class="text-gray-400">Email: info@pnbquiz.ac.id</li>
                     <li class="text-gray-400">Telepon: (0361) 123-4567</li>
@@ -173,7 +173,7 @@
                 </ul>
             </div>
             <div class="w-full md:w-1/4">
-                <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                <h4 class="mb-4 text-lg font-semibold">Ikuti Kami</h4>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-400 hover:text-white">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+        <div class="pt-8 mx-auto mt-8 text-center text-gray-400 border-t border-gray-700 max-w-7xl">
             <p>&copy; 2024 PNB Quiz. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
