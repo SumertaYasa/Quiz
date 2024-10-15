@@ -7,8 +7,8 @@
     @vite('resources/css/welcome.css')
     @vite('resources/js/welcome.js')
 </head>
-<body class="bg-gray-100">
-    <nav class="bg-white py-4 lg:mb-8 px-6 shadow-md w-full z-10">
+<body class="bg-white">
+    <nav class="bg-white py-4 px-6 shadow-md w-full z-10">
         <div class="max-w-7xl mx-auto">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-10">
@@ -45,28 +45,30 @@
         </div>
     </nav>
 
-    <main class="pt-10 px-6">
-        <div class="max-w-7xl mx-auto">
+
+
+    <main class="bg-gray-500 text-white pb-32 lg:pt-8">
+        <div class="max-w-7xl mx-auto px-6 pt-10">
             <div class="flex flex-col lg:flex-row lg:items-center">
                 <div class="lg:w-1/2 lg:pr-16">
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                        Uji Pengetahuanmu dengan <span class="text-blue-600">PNB Quiz</span>
+                    <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+                        Uji Pengetahuanmu dengan <span class="text-blue-400">PNB Quiz</span>
                     </h1>
-                    <p class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+                    <p class="text-4xl lg:text-5xl font-bold leading-tight mb-4">
                         "Belajar jadi lebih seru dan menantang!"
                     </p>
-                    <p class="text-gray-500 text-xl mb-6">
+                    <p class="text-xl mb-6">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="text-gray-700 text-lg mb-8">
+                    <p class="text-lg mb-8">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
-                    <div class="flex space-x-4">
+                    <div class="flex space-x-4 mb-8">
                         <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-center">
                             <span class="block font-semibold">MULAI QUIZ</span>
                             <span class="text-sm">Gratis</span>
                         </a>
-                        <a href="#" class="bg-blue-100 text-blue-700 px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 text-center">
+                        <a href="#" class="bg-gray-200 text-blue-700 px-6 py-3 rounded-md hover:bg-gray-300 transition duration-300 text-center">
                             <span class="block font-semibold">BUAT QUIZ</span>
                             <span class="text-sm">Untuk Dosen</span>
                         </a>
@@ -74,25 +76,67 @@
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
                     <div class="h-60 lg:h-96 flex items-center justify-center">
-                        <img src="/img/logo-pnb.png" id="idleImage" alt="Logo PNB" class="max-h-full max-w-full object-contain">
+                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="max-h-full max-w-full object-contain">
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="bg-white py-16 px-6 mt-16">
+    <div class="relative z-20 -mt-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-blue-600 rounded-lg shadow-lg text-white py-8 px-8">
+                <div class="flex flex-wrap justify-between items-center -mx-4">
+                    <div class="w-full sm:w-1/3 px-4 mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-bold">32+ DOSEN</h3>
+                                <p class="text-sm">Memiliki lebih dari 32 dosen yang ahli dibidang teknologi informasi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/3 px-4 mb-6 sm:mb-0">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-bold">3 PROGRAM STUDI</h3>
+                                <p class="text-sm">Memiliki 3 program studi yang sesuai dengan teknologi informasi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/3 px-4">
+                        <div class="flex items-center">
+                            <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-bold">300+ ALUMNI</h3>
+                                <p class="text-sm">Memiliki 300 lebih alumni yang kompeten dibidangnya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-white py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Panduan Singkat Penggunaan PNB Quiz</h2>
 
             <div class="flex justify-center space-x-4 mb-12">
-                <button id="btn-mendapatkan-akun" class="bg-blue-600 text-bold text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Mendaftar Akun</button>
-                <button id="btn-masuk-sistem" class="text-blue-600 bg-blue-100 text-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Masuk Sistem</button>
-                <button id="btn-buku-panduan" class="text-blue-600 bg-blue-100 text-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Buku Panduan</button>
+                <button id="btn-mendapatkan-akun" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Mendaftar Akun</button>
+                <button id="btn-masuk-sistem" class="text-blue-600 bg-blue-100 font-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Masuk Sistem</button>
+                <button id="btn-buku-panduan" class="text-blue-600 bg-blue-100 font-bold px-6 py-3 rounded-md hover:bg-blue-200 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Buku Panduan</button>
             </div>
 
             <div id="panduan-content" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- dimasuin dari jsnya -->
+                <!-- Content will be added dynamically -->
             </div>
         </div>
     </section>
