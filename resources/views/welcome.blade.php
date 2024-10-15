@@ -8,7 +8,7 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="nav-welcome z-60 relative bg-white">
+    <nav class="relative bg-white nav-welcome z-60">
         <div class="mx-auto max-w-7xl mobile-menu">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-10">
@@ -33,22 +33,22 @@
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="fixed top-16 left-0 right-0 bg-white shadow-lg">
+            <div id="mobile-menu" class="fixed left-0 right-0 bg-white shadow-lg top-16 lg-lite:hidden">
                 <div class="p-4 space-y-4">
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Beranda</a>
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Kategori Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Leaderboard</a>
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Buat Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Bantuan</a>
-                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Cari Quiz</a>
-                    <a href="#" class="block py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md transition duration-200 text-center">Masuk</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Beranda</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Kategori Quiz</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Leaderboard</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Buat Quiz</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Bantuan</a>
+                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Cari Quiz</a>
+                    <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
             </div>
     </nav>
 
 
 
-    <main class="pb-32 text-white bg-[#3434bf] lg:pt-8">
+    <main class="pb-32 text-white text-center lg:text-left bg-[#3434bf] lg:pt-8">
         <div class="px-6 pt-10 mx-auto max-w-7xl">
             <div class="flex flex-col lg:flex-row lg:items-center">
                 <div class="lg:w-1/2 lg:pr-16">
@@ -61,10 +61,10 @@
                     <p class="mb-6 text-xl">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="mb-8 text-lg">
+                    <p class="mb-8 text-lg border w-full lg-lite:max-w-[500px]">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
-                    <div class="flex mb-8 space-x-4">
+                    <div class="flex justify-center mb-8 space-x-4 lg:justify-normal">
                         <a href="#" class="px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">
                             <span class="block font-semibold">MULAI QUIZ</span>
                             <span class="text-sm">Gratis</span>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="mt-12 lg:w-1/2 lg:mt-0">
                     <div class="flex items-center justify-center h-60 lg:h-96">
-                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full drop-shadow-lg rounded-lg">
+                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full rounded-lg drop-shadow-lg">
                     </div>
                 </div>
             </div>

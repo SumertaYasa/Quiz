@@ -17,13 +17,6 @@ mobileMenuButton.addEventListener('click', () => {
         });
     } else {
         // Menutup menu
-        mobileMenu.style.transform = 'translateY(-115%)';
-        mobileMenu.addEventListener('transitionend', function hideMenu() {
-            if (!mobileMenu.classList.contains('active')) {
-                mobileMenu.style.visibility = 'hidden';
-            }
-            mobileMenu.removeEventListener('transitionend', hideMenu);
-        }, { once: true });
         mobileMenu.classList.remove('active');
     }
 });
