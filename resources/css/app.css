@@ -12,14 +12,14 @@
 
 @layer components {
     .navList-welcome {
-        @apply text-gray-600 hover:text-gray-900 font-bold
+        @apply text-white hover:text-gray-400 font-bold
     }
 }
 
 @layer utilities {
     /* Navbar Welcome */
     .nav-welcome {
-        @apply w-full px-6 py-4 bg-white shadow-md;
+        @apply w-full px-6 py-4 shadow-md;
     }
 
     .mobile-menu {
