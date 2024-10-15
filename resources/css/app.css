@@ -19,10 +19,31 @@
 @layer utilities {
     /* Navbar Welcome */
     .nav-welcome {
-        @apply z-10 w-full px-6 py-4 bg-white shadow-md;
+        @apply w-full px-6 py-4 bg-white shadow-md;
     }
 
     .mobile-menu {
         @apply transition-all duration-300;
     }
+}
+
+#mobile-menu {
+    transform: translateY(-100%);
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 40;
+}
+
+#mobile-menu.active {
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+    visibility: visible;
+    transition: clip-path 0.3s ease-in-out;
 }

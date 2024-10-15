@@ -8,7 +8,24 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
 mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+    if (!mobileMenu.classList.contains('active')) {
+        // Membuka menu
+        mobileMenu.classList.add('active');
+        mobileMenu.style.visibility = 'visible';
+        requestAnimationFrame(() => {
+            mobileMenu.style.transform = 'translateY(0)';
+        });
+    } else {
+        // Menutup menu
+        mobileMenu.style.transform = 'translateY(-115%)';
+        mobileMenu.addEventListener('transitionend', function hideMenu() {
+            if (!mobileMenu.classList.contains('active')) {
+                mobileMenu.style.visibility = 'hidden';
+            }
+            mobileMenu.removeEventListener('transitionend', hideMenu);
+        }, { once: true });
+        mobileMenu.classList.remove('active');
+    }
 });
 
 // animasi idle
@@ -23,7 +40,7 @@ function animateIdle() {
     anime({
         targets: imgElement,
         translateY: [
-            { value: -25, duration: 1000, easing: 'easeInOutQuad' },
+            { value: -20, duration: 1000, easing: 'easeInOutQuad' },
             { value: 0, duration: 1000, easing: 'easeInOutQuad' }
         ],
         loop: true

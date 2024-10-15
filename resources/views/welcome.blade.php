@@ -8,7 +8,7 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="nav-welcome ">
+    <nav class="nav-welcome z-60 relative bg-white">
         <div class="mx-auto max-w-7xl mobile-menu">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-10">
@@ -33,16 +33,17 @@
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden mt-4 lg-lite:hidden">
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Beranda</a>
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Kategori Quiz</a>
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Leaderboard</a>
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Buat Quiz</a>
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Bantuan</a>
-                <a href="#" class="block py-2 text-gray-600 hover:text-gray-900">Cari Quiz</a>
-                <a href="#" class="block px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
+            <div id="mobile-menu" class="fixed top-16 left-0 right-0 bg-white shadow-lg">
+                <div class="p-4 space-y-4">
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Beranda</a>
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Kategori Quiz</a>
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Leaderboard</a>
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Buat Quiz</a>
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Bantuan</a>
+                    <a href="#" class="block py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-md transition duration-200">Cari Quiz</a>
+                    <a href="#" class="block py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md transition duration-200 text-center">Masuk</a>
+                </div>
             </div>
-        </div>
     </nav>
 
 
@@ -76,7 +77,7 @@
                 </div>
                 <div class="mt-12 lg:w-1/2 lg:mt-0">
                     <div class="flex items-center justify-center h-60 lg:h-96">
-                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full">
+                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full drop-shadow-lg rounded-lg">
                     </div>
                 </div>
             </div>
@@ -136,7 +137,7 @@
             </div>
 
             <div id="panduan-content" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Content will be added dynamically -->
+                {{-- Datanya di ambil dari JS --}}
             </div>
         </div>
     </section>
