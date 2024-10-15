@@ -33,7 +33,7 @@ function animateIdle() {
     anime({
         targets: imgElement,
         translateY: [
-            { value: -20, duration: 1000, easing: 'easeInOutQuad' },
+            { value: -10, duration: 1000, easing: 'easeInOutQuad' },
             { value: 0, duration: 1000, easing: 'easeInOutQuad' }
         ],
         loop: true

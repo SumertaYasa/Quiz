@@ -8,76 +8,79 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="relative nav-welcome z-60 bg-gradient-to-bl from-blue-900 to-gray-900">
-        <div class="mx-auto max-w-7xl mobile-menu">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-10">
+    <nav class="relative z-60 bg-gradient-to-r from-blue-900 to-indigo-900 shadow-lg">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
                     <span class="text-3xl font-bold text-white">PNB Quiz</span>
-                    <div class="hidden space-x-8 lg-lite:flex">
-                        <a href="#" class="navList-welcome">Beranda</a>
-                        <a href="#" class="navList-welcome">Kategori Quiz</a>
-                        <a href="#" class="navList-welcome">Leaderboard</a>
-                        <a href="#" class="navList-welcome">Buat Quiz</a>
-                        <a href="#" class="navList-welcome">Bantuan</a>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-4">
+                            <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Beranda</a>
+                            <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Kategori Quiz</a>
+                            <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Leaderboard</a>
+                            <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Buat Quiz</a>
+                            <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Bantuan</a>
+                        </div>
                     </div>
                 </div>
-                <div class="items-center hidden space-x-6 lg-lite:flex">
-                    <a href="#" class="text-white hover:text-gray-400">Cari Quiz</a>
-                    <a href="#" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <a href="#" class="text-blue-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all duration-300">Cari Quiz</a>
+                        <a href="#" class="ml-4 px-4 py-2 text-blue-900 bg-blue-200 rounded-md hover:bg-blue-100 transition-all duration-300">Masuk</a>
+                    </div>
                 </div>
-                <div class="lg-lite:hidden">
-                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-600">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-blue-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="fixed left-0 right-0 bg-white shadow-lg top-16 lg-lite:hidden">
-                <div class="p-4 space-y-4">
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Beranda</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Kategori Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Leaderboard</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Buat Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Bantuan</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Cari Quiz</a>
-                    <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
-                </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Beranda</a>
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Kategori Quiz</a>
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Leaderboard</a>
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Buat Quiz</a>
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Bantuan</a>
+                <a href="#" class="text-blue-200 hover:bg-blue-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Cari Quiz</a>
+                <a href="#" class="text-blue-900 bg-blue-200 hover:bg-blue-100 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">Masuk</a>
             </div>
+        </div>
     </nav>
 
-
-    {{-- Hero --}}
-    <main class="pb-32 text-white text-center lg:text-left bg-gradient-to-br from-gray-900 to-blue-900 lg:pt-8">
-        <div class="px-6 pt-10 mx-auto max-w-7xl">
+    <main class="bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 pb-32 text-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16">
             <div class="flex flex-col lg:flex-row lg:items-center">
                 <div class="lg:w-1/2 lg:pr-16">
-                    <h1 class="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
+                    <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-4">
                         Uji Pengetahuanmu dengan <span class="text-blue-400">PNB Quiz</span>
                     </h1>
-                    <p class="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
+                    <p class="text-3xl font-bold mb-4 text-blue-200">
                         "Belajar jadi lebih seru dan menantang!"
                     </p>
-                    <p class="mb-6 text-xl">
+                    <p class="text-xl mb-6 text-blue-100">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="mb-8 p-2 text-lg border w-full lg-lite:max-w-[500px]">
+                    <p class="mb-8 p-4 text-lg border border-blue-400 rounded-lg backdrop-blur-md bg-blue-900 bg-opacity-30 shadow-lg text-blue-100">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
-                    <div class="flex justify-center mb-8 space-x-4 lg:justify-normal">
-                        <a href="#" class="px-6 py-3 text-center text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">
-                            <span class="block font-semibold">MULAI QUIZ</span>
-                            <span class="text-sm">Gratis</span>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                        <a href="#" class="px-8 py-3 text-center text-blue-900 bg-blue-400 rounded-md hover:bg-blue-300 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <span class="block font-semibold text-white">Mulai Quiz</span>
+                            <span class="text-sm text-white">Gratis</span>
                         </a>
-                        <a href="#" class="px-6 py-3 text-center text-blue-700 transition duration-300 bg-gray-200 rounded-md hover:bg-gray-300">
-                            <span class="block font-semibold">BUAT QUIZ</span>
-                            <span class="text-sm">Untuk Dosen</span>
+                        <a href="#" class="px-8 py-3 text-center text-blue-400 bg-blue-900 rounded-md hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg border border-blue-400">
+                            <span class="block font-semibold text-white">Buat Quiz</span>
+                            <span class="text-sm text-white">Untuk Dosen</span>
                         </a>
                     </div>
                 </div>
-                <div class="mt-12 lg:w-1/2 lg:mt-0">
-                    <div class="flex items-center justify-center h-60 lg:h-96">
-                        <img src="/img/logo.png" id="idleImage" alt="Logo PNB" class="object-contain max-w-full max-h-full rounded-lg drop-shadow-lg">
+                <div class="mt-12 lg:mt-0 lg:w-1/2">
+                    <div class="flex items-center justify-center h-60 lg:h-96 rounded-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                        <img src="/img/logo.png" id="idleImage" alt="Logo JTI" class="object-contain max-h-full rounded-lg drop-shadow-lg hover:drop-shadow-3xl transition-shadow duration-300">
                     </div>
                 </div>
             </div>
@@ -129,199 +132,10 @@
 
     <section class="py-20 overflow-hidden" x-data="{ activeQuiz: null }">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center mb-4 relative z-10">
+            <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 text-center pb-4 relative z-50">
                 Tantangan Quiz Terkini
             </h2>
             <p class="text-xl text-gray-900 text-center mb-12 relative z-10">Uji pengetahuanmu dengan quiz-quiz paling menantang!</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-                <!-- Quiz Card 1 -->
-                <div class="group" @mouseenter="activeQuiz = 1" @mouseleave="activeQuiz = null">
-                    <div class="relative bg-gradient-to-br from-blue-500 to-purple-600 p-1 rounded-xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1">
-                        <div class="bg-gray-900 rounded-lg p-6 h-full">
-                            <div class="absolute top-0 right-0 -mt-4 -mr-4 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 font-bold text-xl transform rotate-12 group-hover:rotate-0 transition-all duration-300">
-                                Hot!
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Database Mastery</h3>
-                            <p class="text-gray-300 mb-4">Tantang dirimu dengan konsep database tingkat lanjut.</p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm font-semibold text-purple-400">40 Soal</span>
-                                <button class="px-4 py-2 bg-purple-500 text-white rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
-                                    Mulai Quiz
-                                </button>
-                            </div>
-                            <div class="mt-4 flex space-x-2">
-                                <span class="px-2 py-1 bg-blue-500 text-xs text-white rounded-full">SQL</span>
-                                <span class="px-2 py-1 bg-green-500 text-xs text-white rounded-full">NoSQL</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hover Effect -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl -z-10"></div>
-                </div>
-
-                <!-- Quiz Card 2 -->
-                <div class="group" @mouseenter="activeQuiz = 2" @mouseleave="activeQuiz = null">
-                    <div class="relative bg-gradient-to-br from-green-400 to-blue-500 p-1 rounded-xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1">
-                        <div class="bg-gray-900 rounded-lg p-6 h-full">
-                            <div class="absolute top-0 left-0 -mt-4 -ml-4 w-20 h-20 bg-pink-400 rounded-full flex items-center justify-center text-gray-900 font-bold text-xl transform -rotate-12 group-hover:rotate-0 transition-all duration-300">
-                                New!
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3">AI & Machine Learning</h3>
-                            <p class="text-gray-300 mb-4">Jelajahi dunia AI dan machine learning terkini.</p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm font-semibold text-blue-400">35 Soal</span>
-                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                                    Mulai Quiz
-                                </button>
-                            </div>
-                            <div class="mt-4 flex space-x-2">
-                                <span class="px-2 py-1 bg-indigo-500 text-xs text-white rounded-full">Deep Learning</span>
-                                <span class="px-2 py-1 bg-red-500 text-xs text-white rounded-full">Neural Networks</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hover Effect -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-green-300 to-blue-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl -z-10"></div>
-                </div>
-
-                <!-- Quiz Card 3 -->
-                <div class="group" @mouseenter="activeQuiz = 3" @mouseleave="activeQuiz = null">
-                    <div class="relative bg-gradient-to-br from-red-500 to-yellow-500 p-1 rounded-xl transition-all duration-300 transform group-hover:scale-105 group-hover:rotate-1">
-                        <div class="bg-gray-900 rounded-lg p-6 h-full">
-                            <div class="absolute bottom-0 right-0 -mb-4 -mr-4 w-20 h-20 bg-green-400 rounded-full flex items-center justify-center text-gray-900 font-bold text-xl transform rotate-12 group-hover:rotate-0 transition-all duration-300">
-                                Pro!
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3">Cyber Security Expert</h3>
-                            <p class="text-gray-300 mb-4">Uji keahlianmu dalam dunia keamanan siber.</p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm font-semibold text-yellow-400">50 Soal</span>
-                                <button class="px-4 py-2 bg-red-500 text-white rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
-                                    Mulai Quiz
-                                </button>
-                            </div>
-                            <div class="mt-4 flex space-x-2">
-                                <span class="px-2 py-1 bg-yellow-500 text-xs text-gray-900 rounded-full">Ethical Hacking</span>
-                                <span class="px-2 py-1 bg-purple-500 text-xs text-white rounded-full">Network Security</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hover Effect -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-red-400 to-yellow-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl -z-10"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- panduan --}}
-    <section class="px-6 py-24 bg-gradient-to-br from-gray-900 to-blue-900 text-white overflow-hidden relative">
-        <div class="absolute top-0 left-0 right-0 h-1 bg-blue-500"></div>
-
-        <div class="mx-auto max-w-7xl relative z-10">
-            <h2 class="mb-12 text-5xl font-bold text-center text-blue-300">
-                Panduan Singkat Penggunaan PNB Quiz
-            </h2>
-
-            <div class="flex flex-wrap justify-center mb-16 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0">
-                <button id="btn-mendapatkan-akun" class="group w-full sm:w-auto px-8 py-4 font-bold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
-                    <span class="flex items-center justify-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
-                        Mendaftar Akun
-                    </span>
-                </button>
-                <button id="btn-masuk-sistem" class="group w-full sm:w-auto px-8 py-4 font-bold text-blue-300 bg-transparent border-2 border-blue-300 rounded-full hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
-                    <span class="flex items-center justify-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
-                        Masuk Sistem
-                    </span>
-                </button>
-                <button id="btn-buku-panduan" class="group w-full sm:w-auto px-8 py-4 font-bold text-blue-300 bg-transparent border-2 border-blue-300 rounded-full hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
-                    <span class="flex items-center justify-center">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                        Buku Panduan
-                    </span>
-                </button>
-            </div>
-
-            <div id="panduan-content" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Card 1 -->
-                <div class="bg-gray-800 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                    <div class="p-6 h-full relative overflow-hidden">
-                        <div class="absolute top-0 right-0 mt-4 mr-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            1
-                        </div>
-                        <h3 class="text-2xl font-bold text-blue-300 mb-3">Mendaftar Akun</h3>
-                        <p class="text-gray-300 mb-4">Mulai perjalanan Anda dengan membuat akun PNB Quiz. Proses pendaftaran cepat dan mudah!</p>
-                        <ul class="text-gray-400 mb-4 space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Isi formulir pendaftaran
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Verifikasi email
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Selesaikan profil
-                            </li>
-                        </ul>
-                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Pelajari Lebih Lanjut</a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-gray-800 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                    <div class="p-6 h-full relative overflow-hidden">
-                        <div class="absolute top-0 right-0 mt-4 mr-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            2
-                        </div>
-                        <h3 class="text-2xl font-bold text-blue-300 mb-3">Jelajahi Quiz</h3>
-                        <p class="text-gray-300 mb-4">Temukan berbagai quiz menarik yang sesuai dengan minat dan tingkat kemampuan Anda.</p>
-                        <ul class="text-gray-400 mb-4 space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Pilih kategori
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Set tingkat kesulitan
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Mulai tantangan!
-                            </li>
-                        </ul>
-                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Lihat Quiz</a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-gray-800 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                    <div class="p-6 h-full relative overflow-hidden">
-                        <div class="absolute top-0 right-0 mt-4 mr-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            3
-                        </div>
-                        <h3 class="text-2xl font-bold text-blue-300 mb-3">Dapatkan Reward</h3>
-                        <p class="text-gray-300 mb-4">Kumpulkan poin, raih prestasi, dan tukarkan dengan hadiah menarik!</p>
-                        <ul class="text-gray-400 mb-4 space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Selesaikan quiz
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Dapatkan badge
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-4 h-4 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Tukar poin
-                            </li>
-                        </ul>
-                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Cek Reward</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
