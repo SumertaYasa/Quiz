@@ -8,7 +8,7 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="relative nav-welcome z-60 bg-[#2b2bb5]">
+    <nav class="relative nav-welcome z-60 bg-gradient-to-bl from-blue-900 to-gray-900">
         <div class="mx-auto max-w-7xl mobile-menu">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-10">
@@ -47,8 +47,8 @@
     </nav>
 
 
-
-    <main class="pb-32 text-white text-center lg:text-left bg-[#3434bf] lg:pt-8">
+    {{-- Hero --}}
+    <main class="pb-32 text-white text-center lg:text-left bg-gradient-to-br from-gray-900 to-blue-900 lg:pt-8">
         <div class="px-6 pt-10 mx-auto max-w-7xl">
             <div class="flex flex-col lg:flex-row lg:items-center">
                 <div class="lg:w-1/2 lg:pr-16">
@@ -84,6 +84,7 @@
         </div>
     </main>
 
+    {{-- Hero Card --}}
     <div class="relative z-20 px-6 -mt-20">
         <div class="mx-auto my-5 max-w-6xl">
             <div class="px-12 py-5 text-white bg-[#3f3fcc] rounded-lg shadow-lg">
@@ -126,18 +127,116 @@
         </div>
     </div>
 
-    <section class="px-6 py-24 bg-white">
-        <div class="mx-auto max-w-7xl">
-            <h2 class="mb-12 text-3xl font-bold text-center text-gray-900">Panduan Singkat Penggunaan PNB Quiz</h2>
+    <section class="py-16 bg-gradient-to-b from-blue-50 to-white mb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-2">
+                Quiz Populer
+            </h2>
+            <p class="text-xl text-gray-600 text-center mb-8">Tantang dirimu dengan quiz terpopuler minggu ini!</p>
 
-            <div class="flex justify-center mb-12 space-x-4">
-                <button id="btn-mendapatkan-akun" class="px-6 py-3 font-bold text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Mendaftar Akun</button>
-                <button id="btn-masuk-sistem" class="px-6 py-3 font-bold text-blue-600 transition duration-300 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Masuk Sistem</button>
-                <button id="btn-buku-panduan" class="px-6 py-3 font-bold text-blue-600 transition duration-300 bg-blue-100 rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Buku Panduan</button>
+            <div class="relative" x-data="{ activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide + 1) % 3, 5000)">
+                <!-- Slider container -->
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Quiz Card 1 -->
+                                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                                    <div class="relative">
+                                        <img class="w-full h-48 object-cover" src="/img/1.jpg" alt="Database Fundamentals Quiz">
+                                        <span class="absolute top-0 left-0 bg-blue-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Database</span>
+                                        <span class="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Menengah</span>
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="font-bold text-xl mb-2">Database Fundamentals</h3>
+                                        <p class="text-gray-700 text-base mb-4">Uji pemahaman Anda tentang konsep dasar database SQL.</p>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm font-semibold text-blue-600">30 Pertanyaan</span>
+                                            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Mulai Quiz</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quiz Card 2 -->
+                                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                                    <div class="relative">
+                                        <img class="w-full h-48 object-cover" src="/img/2.jpg" alt="Web Development Basics Quiz">
+                                        <span class="absolute top-0 left-0 bg-green-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Web Dev</span>
+                                        <span class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Pemula</span>
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="font-bold text-xl mb-2">Web Development Basics</h3>
+                                        <p class="text-gray-700 text-base mb-4">Pelajari HTML, CSS, dan JavaScript melalui quiz interaktif.</p>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm font-semibold text-blue-600">25 Pertanyaan</span>
+                                            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Mulai Quiz</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quiz Card 3 -->
+                                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                                    <div class="relative">
+                                        <img class="w-full h-48 object-cover" src="/img/3.jpg" alt="Data Structures Quiz">
+                                        <span class="absolute top-0 left-0 bg-purple-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Algoritma</span>
+                                        <span class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 m-2 rounded">Lanjutan</span>
+                                    </div>
+                                    <div class="p-6">
+                                        <h3 class="font-bold text-xl mb-2">Data Structures</h3>
+                                        <p class="text-gray-700 text-base mb-4">Tingkatkan pemahaman Anda tentang struktur data penting.</p>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-sm font-semibold text-blue-600">35 Pertanyaan</span>
+                                            <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">Mulai Quiz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 and 3 (similar structure, different content) -->
+                        <!-- ... -->
+                    </div>
+                </div>
+
+                <!-- Slider controls -->
+                <button class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md" @click="activeSlide = (activeSlide - 1 + 3) % 3">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md" @click="activeSlide = (activeSlide + 1) % 3">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
             </div>
+    </section>
 
+    {{-- panduan --}}
+    <section class="px-6 py-24 bg-gradient-to-tr from-gray-900 to-blue-900 text-white">
+        <div class="mx-auto max-w-7xl">
+            <h2 class="mb-12 text-4xl font-bold text-center text-blue-300">
+                Panduan Singkat Penggunaan PNB Quiz
+            </h2>
+            <div class="flex flex-wrap justify-center mb-12 space-x-0 space-y-4 sm:space-x-4 sm:space-y-0">
+                <button id="btn-mendapatkan-akun" class="w-full sm:w-auto px-8 py-4 font-bold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
+                    <span class="flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                        Mendaftar Akun
+                    </span>
+                </button>
+                <button id="btn-masuk-sistem" class="w-full sm:w-auto px-8 py-4 font-bold text-blue-300 bg-transparent border-2 border-blue-300 rounded-full hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
+                    <span class="flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path></svg>
+                        Masuk Sistem
+                    </span>
+                </button>
+                <button id="btn-buku-panduan" class="w-full sm:w-auto px-8 py-4 font-bold text-blue-300 bg-transparent border-2 border-blue-300 rounded-full hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-1">
+                    <span class="flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Buku Panduan
+                    </span>
+                </button>
+            </div>
             <div id="panduan-content" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {{-- Datanya di ambil dari JS --}}
+                <!-- Content will be populated by JavaScript -->
             </div>
         </div>
     </section>
