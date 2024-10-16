@@ -33,15 +33,16 @@
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="bg-white shadow-lg lg-lite:hidden rounded-br-xl rounded-bl-xl">
-                <div class="p-4 space-y-4">
-                    <a href="#" class="mobile-navList">Beranda</a>
-                    <a href="#" class="mobile-navList">Kategori Quiz</a>
-                    <a href="#" class="mobile-navList">Leaderboard</a>
-                    <a href="#" class="mobile-navList">Buat Quiz</a>
-                    <a href="#" class="mobile-navList">Bantuan</a>
-                    <a href="#" class="mobile-navList">Cari Quiz</a>
-                    <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
+            <div id="mobile-menu" class="fixed inset-0 z-50 bg-white overflow-y-auto">
+                    <div class="flex-grow p-4 space-y-4">
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Beranda</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Kategori Quiz</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Leaderboard</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Buat Quiz</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Bantuan</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Cari Quiz</a>
+                        <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
+                    </div>
                 </div>
             </div>
     </nav>
@@ -59,7 +60,7 @@
                     <p class="mb-6 text-xl">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="mb-8 text-lg border p-2 w-full lg-lite:min-w-[300px]">
+                    <p class="mb-8 text-lg border rounded-xl p-2 w-full lg-lite:min-w-[300px]">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
                     <div class="flex justify-center mb-8 space-x-4 lg:justify-normal">

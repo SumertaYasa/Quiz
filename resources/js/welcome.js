@@ -2,18 +2,40 @@
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
+let scrollPosition;
+
+function disableScroll() {
+  scrollPosition = window.pageYOffset;
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.style.left = '0';
+  document.body.style.right = '0';
+}
+
+function enableScroll() {
+  document.body.style.removeProperty('overflow');
+  document.body.style.removeProperty('position');
+  document.body.style.removeProperty('top');
+  document.body.style.removeProperty('left');
+  document.body.style.removeProperty('right');
+  window.scrollTo(0, scrollPosition);
+}
+
 mobileMenuButton.addEventListener('click', () => {
-    if (!mobileMenu.classList.contains('active')) {
-        // Membuka menu
-        mobileMenu.classList.add('active');
-        mobileMenu.style.visibility = 'visible';
-        requestAnimationFrame(() => {
-            mobileMenu.style.transform = 'translateY(0)';
-        });
-    } else {
-        // Menutup menu
-        mobileMenu.classList.remove('active');
-    }
+  if (!mobileMenu.classList.contains('active')) {
+    mobileMenu.classList.add('active');
+    mobileMenu.style.visibility = 'visible';
+    requestAnimationFrame(() => {
+      mobileMenu.style.transform = 'translateY(0)';
+    });
+
+    disableScroll();
+  } else {
+    mobileMenu.classList.remove('active');
+
+    enableScroll();
+  }
 });
 
 // animasi idle
