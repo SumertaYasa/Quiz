@@ -33,14 +33,14 @@
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="fixed inset-0 z-50 bg-white overflow-y-auto">
+            <div id="mobile-menu" class="fixed inset-0 z-50 overflow-y-auto bg-white">
                     <div class="flex-grow p-4 space-y-4">
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Beranda</a>
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Kategori Quiz</a>
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Leaderboard</a>
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Buat Quiz</a>
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Bantuan</a>
-                        <a href="#" class="block py-2 text-center text-gray-800 hover:bg-gray-100 rounded-md">Cari Quiz</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Beranda</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Kategori Quiz</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Leaderboard</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Buat Quiz</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Bantuan</a>
+                        <a href="#" class="block py-2 text-center text-gray-800 rounded-md hover:bg-gray-100">Cari Quiz</a>
                         <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                     </div>
                 </div>
