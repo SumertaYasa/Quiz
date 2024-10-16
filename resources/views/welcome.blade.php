@@ -33,7 +33,7 @@
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="fixed left-0 right-0 bg-white shadow-lg top-16 lg-lite:hidden">
+            <div id="mobile-menu" class="fixed left-0 right-0 bg-white shadow-lg top-16 lg-lite:hidden rounded-br-xl rounded-bl-xl">
                 <div class="p-4 space-y-4">
                     <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Beranda</a>
                     <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Kategori Quiz</a>
@@ -45,8 +45,6 @@
                 </div>
             </div>
     </nav>
-
-
 
     <main class="pb-32 text-white text-center lg:text-left bg-[#3434bf] lg:pt-8">
         <div class="px-6 pt-10 mx-auto max-w-7xl">
@@ -61,7 +59,7 @@
                     <p class="mb-6 text-xl">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="mb-8 text-lg border w-full lg-lite:max-w-[500px]">
+                    <p class="mb-8 text-lg border rounded-xl p-2 w-full lg-lite:max-w-[500px]">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
                     <div class="flex justify-center mb-8 space-x-4 lg:justify-normal">
@@ -84,11 +82,12 @@
         </div>
     </main>
 
+    {{-- Hero Card --}}
     <div class="relative z-20 px-6 -mt-20">
-        <div class="mx-auto max-w-7xl">
-            <div class="px-8 py-8 text-white bg-blue-600 rounded-lg shadow-lg">
+        <div class="mx-auto my-[8rem] lg-lite:my-5 max-w-6xl">
+            <div class="px-12 py-5 text-white bg-blue-600 rounded-lg shadow-lg">
                 <div class="flex flex-wrap items-center justify-between -mx-4">
-                    <div class="w-full px-4 mb-6 sm:w-1/3 sm:mb-0">
+                    <div class="w-full px-4 pb-1 sm:w-1/3 sm:mb-0">
                         <div class="flex items-center">
                             <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
@@ -126,7 +125,7 @@
         </div>
     </div>
 
-    <section class="px-6 py-24 bg-white">
+    <section class="px-6 lg-lite:py-24 bg-white">
         <div class="mx-auto max-w-7xl">
             <h2 class="mb-12 text-3xl font-bold text-center text-gray-900">Panduan Singkat Penggunaan PNB Quiz</h2>
 
