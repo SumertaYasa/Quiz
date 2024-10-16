@@ -125,13 +125,16 @@
         </div>
     </div>
 
-    <section class="px-6 lg-lite:py-24 bg-white">
-        <div class="max-w-4xl mx-auto p-6">
-            <h2 class="text-3xl font-bold text-center mb-8">Panduan singkat</h2>
-            <div class="flex justify-center space-x-4 mb-8">
-                <button id="btn-mendapatkan-akun" class="px-4 py-2 rounded-md bg-blue-500 text-white transition duration-300">MENDAPATKAN AKUN</button>
-                <button id="btn-masuk-sistem" class="px-4 py-2 rounded-md bg-gray-200 transition duration-300">MASUK SISTEM</button>
-                <button id="btn-buku-panduan" class="px-4 py-2 rounded-md bg-gray-200 transition duration-300">BUKU PANDUAN</button>
+    <section class="px-6 lg-lite:py-20 bg-white">
+        <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-6">
+            <h2 class="text-5xl font-bold mb-8 relative inline-block pb-3">
+                Panduan singkat
+                <span class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600 transform -skew-y-1"></span>
+            </h2>
+            <div class="flex justify-center space-x-4 mb-8 pt-2">
+                <button id="btn-mendapatkan-akun" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out">MENDAPATKAN AKUN</button>
+                <button id="btn-masuk-sistem" class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out">MASUK SISTEM</button>
+                <button id="btn-buku-panduan" class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out">BUKU PANDUAN</button>
             </div>
             <div id="panduan-content" class="space-y-4 relative">
                 <!-- Kentennya disini -->
