@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="items-center hidden space-x-6 lg-lite:flex">
-                    <a href="#" class="hover:text-gray-400 text-white">Cari Quiz</a>
+                    <a href="#" class="hover:text-gray-400 text-white font-semibold">Cari Quiz</a>
                     <a href="#" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
                 <div class="lg-lite:hidden">

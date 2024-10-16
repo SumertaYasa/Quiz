@@ -12,7 +12,13 @@
 
 @layer components {
     .navList-welcome {
-        @apply text-gray-600 hover:text-gray-400 font-bold
+        @apply text-gray-600 hover:text-gray-400 font-semibold relative inline-block;
+    }
+    .navList-welcome::after {
+        @apply content-[''] absolute -bottom-0.5 left-0 w-0 h-[4px] bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-500 ease-in-out;
+    }
+    .navList-welcome:hover::after {
+        @apply w-full;
     }
 }
 
