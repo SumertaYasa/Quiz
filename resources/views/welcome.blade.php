@@ -8,39 +8,39 @@
     @vite('resources/js/welcome.js')
 </head>
 <body class="bg-white">
-    <nav class="relative bg-gradient-to-r from-blue-900 to-blue-900 shadow-lg nav-welcome z-60">
+    <nav class="nav-welcome">
         <div class="mx-auto max-w-7xl mobile-menu">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-10">
                     <span class="text-3xl font-bold text-white">PNBQuiz</span>
                     <div class="hidden space-x-8 lg-lite:flex">
-                        <a href="#" class="navList-welcome text-white">Beranda</a>
-                        <a href="#" class="navList-welcome text-white">Kategori Quiz</a>
-                        <a href="#" class="navList-welcome text-white">Leaderboard</a>
-                        <a href="#" class="navList-welcome text-white">Buat Quiz</a>
-                        <a href="#" class="navList-welcome text-white">Bantuan</a>
+                        <a href="#" class="text-white navList-welcome">Beranda</a>
+                        <a href="#" class="text-white navList-welcome">Kategori Quiz</a>
+                        <a href="#" class="text-white navList-welcome">Leaderboard</a>
+                        <a href="#" class="text-white navList-welcome">Buat Quiz</a>
+                        <a href="#" class="text-white navList-welcome">Bantuan</a>
                     </div>
                 </div>
                 <div class="items-center hidden space-x-6 lg-lite:flex">
-                    <a href="#" class="hover:text-gray-400 text-white font-semibold">Cari Quiz</a>
+                    <a href="#" class="font-semibold text-white hover:text-gray-400">Cari Quiz</a>
                     <a href="#" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
                 <div class="lg-lite:hidden">
-                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-600">
+                    <button id="mobile-menu-button" class="text-white">
                         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="fixed left-0 right-0 bg-white shadow-lg top-16 lg-lite:hidden rounded-br-xl rounded-bl-xl">
+            <div id="mobile-menu" class="bg-white shadow-lg lg-lite:hidden rounded-br-xl rounded-bl-xl">
                 <div class="p-4 space-y-4">
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Beranda</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Kategori Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Leaderboard</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Buat Quiz</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Bantuan</a>
-                    <a href="#" class="block py-2 text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100">Cari Quiz</a>
+                    <a href="#" class="mobile-navList">Beranda</a>
+                    <a href="#" class="mobile-navList">Kategori Quiz</a>
+                    <a href="#" class="mobile-navList">Leaderboard</a>
+                    <a href="#" class="mobile-navList">Buat Quiz</a>
+                    <a href="#" class="mobile-navList">Bantuan</a>
+                    <a href="#" class="mobile-navList">Cari Quiz</a>
                     <a href="#" class="block py-2 text-center text-white transition duration-200 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                     <p class="mb-6 text-xl">
                         - Platform quiz interaktif terbaik untuk mahasiswa PNB
                     </p>
-                    <p class="mb-8 text-lg border rounded-xl p-2 w-full lg-lite:max-w-[500px]">
+                    <p class="mb-8 text-lg border p-2 w-full lg-lite:min-w-[300px]">
                         Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan dan informatif.
                     </p>
                     <div class="flex justify-center mb-8 space-x-4 lg:justify-normal">
@@ -125,18 +125,18 @@
         </div>
     </div>
 
-    <section class="px-6 lg-lite:py-20 bg-white">
-        <div class="flex flex-col items-center justify-center w-full max-w-4xl mx-auto p-6">
-            <h2 class="text-5xl font-bold mb-8 relative inline-block pb-3">
+    <section class="px-6 bg-white lg-lite:py-20">
+        <div class="flex flex-col items-center justify-center w-full max-w-4xl p-6 mx-auto">
+            <h2 class="relative inline-block pb-3 mb-8 text-5xl font-bold">
                 Panduan singkat
-                <span class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600 transform -skew-y-1"></span>
+                <span class="absolute bottom-0 left-0 w-full h-2 transform bg-gradient-to-r from-blue-400 to-blue-600 -skew-y-1"></span>
             </h2>
-            <div class="flex justify-center space-x-4 mb-8 pt-2">
-                <button id="btn-mendapatkan-akun" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out">MENDAPATKAN AKUN</button>
-                <button id="btn-masuk-sistem" class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out">MASUK SISTEM</button>
-                <button id="btn-buku-panduan" class="px-6 py-3 bg-gray-200 text-gray-500 font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out">BUKU PANDUAN</button>
+            <div class="flex justify-center pt-2 mb-8 space-x-4">
+                <button id="btn-mendapatkan-akun" class="px-6 py-3 font-semibold text-white transition duration-300 ease-in-out bg-blue-500 rounded-lg shadow-md hover:bg-blue-600">MENDAPATKAN AKUN</button>
+                <button id="btn-masuk-sistem" class="px-6 py-3 font-semibold text-gray-500 transition duration-300 ease-in-out bg-gray-200 rounded-lg shadow-md hover:bg-gray-300">MASUK SISTEM</button>
+                <button id="btn-buku-panduan" class="px-6 py-3 font-semibold text-gray-500 transition duration-300 ease-in-out bg-gray-200 rounded-lg shadow-md hover:bg-gray-300">BUKU PANDUAN</button>
             </div>
-            <div id="panduan-content" class="space-y-4 relative">
+            <div id="panduan-content" class="relative space-y-4">
                 <!-- Kentennya disini -->
             </div>
         </div>

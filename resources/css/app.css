@@ -25,9 +25,12 @@
 @layer utilities {
     /* Navbar Welcome */
     .nav-welcome {
-        @apply w-full px-6 py-4 bg-white shadow-md;
+        @apply w-full px-6 py-4 bg-blue-900 shadow-md relative top-0 z-[90px];
     }
 
+    .mobile-navList {
+        @apply block pl-2 py-3 font-semibold text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100;
+    }
     .mobile-menu {
         @apply transition-all duration-300;
     }
