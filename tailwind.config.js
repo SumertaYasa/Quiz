@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      container:{
+        center:true
+      },
       fontFamily: {
         roboto: ['Roboto']
       },
