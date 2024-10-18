@@ -9,6 +9,7 @@
 </head>
 <body>
   @include('components.navigation')
+  
   @vite('resources/js/navigation.js')
 </body>
 </html>

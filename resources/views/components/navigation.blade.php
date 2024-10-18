@@ -6,10 +6,10 @@
                 <img class="logo-sidebar" src="/img/logo-pnb.png" alt="Logo PNB">
             </div>
             
-            <button onclick="closeSidebar()" id="btn-closeSide" class="icons btn-close-side"><i class='bx bx-left-arrow-alt' ></i></button>
+            <button onclick="closeSidebar()" id="btn-closeSide" class="icons btn color-btn-close"><i class='bx bx-left-arrow-alt' ></i></button>
         </div>
         <div class="pl-[40px]">
-            <span class="text-[24px] font-light pb-[15px]">menu</span>
+            <span class="span-menu">menu</span>
             <ul class="menu-sidebar">
                 <li class="hover:bg-[#4545C1]"><i class='icons pr-[20px] bx bxs-dashboard' ></i>dashboard</li>
                 <li class="hover:bg-[#4545C1]"><i class='icons pr-[20px] bx bxs-data' ></i>data pengguna</li>
@@ -34,17 +34,17 @@
         </div>
     </aside>
     <nav class="border-b navbar">
-        <button onclick="openSidebar()" id="btn-menu" class="btn-menu icons"><i class='bx bx-menu' ></i></button>
+        <button onclick="openSidebar()" id="btn-menu" class="btn color-btn-menu icons"><i class='bx bx-menu' ></i></button>
 
         <div class="flex items-center justify-between w-[200px]">
-            <button id="btn-darkmode" class="btn-navbar icons"><i class=' bx bxs-sun' ></i></button>
-            <button id="btn-notificaton" class="btn-navbar icons"><i class=' bx bxs-bell' ></i></button>
+            <button id="btn-darkmode" class="btn-full color-btn-navbar icons"><i class=' bx bxs-sun' ></i></button>
+            <button id="btn-notificaton" class="btn-full color-btn-navbar icons"><i class='bx bxs-bell' ></i></button>
             <div class="flex gap-[10px]">
                 <div class="flex flex-col">
                     {{-- menampilkan nama panggilan pengguna --}}
-                    <h1 class="text-[1rem] font-semibold">putri</h1>
+                    <h1 class="font-semibold">putri</h1>
                     {{-- Menampilkabn Role seperti "mahasiswa 3C TRPL" --}}
-                    <span class="text-[0.75rem] font-normal">Kelas 3C</span>
+                    <span class="font-normal ">Kelas 3C</span>
                 </div>
                 <a class="flex" href="">
                     <img class="w-[40px] h-[40px] rounded-full" src="https://randomuser.me/api/portraits/women/85.jpg" alt="">

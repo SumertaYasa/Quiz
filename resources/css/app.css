@@ -7,9 +7,10 @@
 @tailwind utilities;
 
 @layer base {
-    main {
-        @apply font-roboto;
+    body {
+        @apply font-roboto text-mobile-base md:text-tablet-base lg:text-desktop-base;
     }
+    
 }
 
 @layer components {
@@ -18,25 +19,37 @@
         @apply
     } */
 
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .btn {
+        @apply w-[35px] h-[35px] flex-center rounded-md
+    }
+    .btn-full { 
+        @apply w-[35px] h-[35px] rounded-full;
+    }
+    
+    .icons {
+        @apply text-icon-mobile md:text-icon-tablet  font-normal;
+    }
+
     /* komponen navigation */
     .navbar {
         @apply container flex justify-between border px-5 w-full items-center py-[15px] bg-white shadow-lg;
     }
-
+    
     .sidebar {
-        @apply absolute left-[-350px] flex flex-col w-[350px] bg-[#2D2D91] h-screen text-white ease-in-out duration-300;
+        @apply absolute left-[-300px] flex flex-col w-[300px] bg-[#2D2D91] h-screen text-white ease-in-out duration-300;
     }
-
-    .icons {
-        @apply text-[24px] font-normal;
-    }
-
+    
+    
     /* welcome home */
     .navList-welcome {
         @apply text-gray-600 hover:text-gray-400 font-semibold relative inline-block;
     }
     .navList-welcome::after {
-        @apply content-[''] absolute rounded-xl -bottom-0.5 left-0 w-0 h-[4px] bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-500 ease-in-out;
+        @apply content-[''] absolute rounded-xl -bottom-0.5 left-0 w-0 h-[2px] bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-500 ease-in-out;
     }
     .navList-welcome:hover::after {
         @apply w-full;
@@ -46,16 +59,16 @@
 
 @layer utilities {
     /* komponen navigation */
-    .btn-menu {
-        @apply bg-[#2D2D91] w-[40px] h-[40px] text-white rounded-md;
+    .color-btn-menu {
+        @apply bg-[#2D2D91] text-white;
     }    
 
-    .btn-navbar {
-        @apply text-[#424242] w-[35px] h-[35px] rounded-full bg-[#EBEBEB]
+    .color-btn-navbar {
+        @apply text-[#424242]  bg-[#EBEBEB]
     }
 
-    .btn-close-side {
-        @apply bg-[#4545C1] w-[40px] h-[40px] rounded-md;
+    .color-btn-close {
+        @apply bg-[#4545C1];
     }
 
     .logo-sidebar {
@@ -63,20 +76,27 @@
     }
 
     .menu-sidebar {
-        @apply *:flex *:justify-start *:items-center *:my-[12px] *:py-2 *:px-4 *:text-[20px] *:font-medium *:w-[250px]  *:rounded-lg
+        @apply *:flex *:justify-start *:items-center *:my-[12px] *:py-2 *:px-4 *:text-mobile-heading *:md:text-tablet-heading *:font-medium *:w-[250px] *:rounded-lg
     }
 
-    /* Navbar Welcome */
+    .span-menu {
+        @apply text-[20px] font-light pb-[15px]
+    }
+    /* tutup komponen navigation */
+
+
+    /* halaman file welcome */
     .nav-welcome {
         @apply w-full px-6 py-4 bg-blue-900 shadow-md relative top-0 z-[90px];
     }
-
+    
     .mobile-navList {
         @apply block pl-2 py-3 font-semibold text-gray-600 transition duration-200 rounded-md hover:text-gray-900 hover:bg-gray-100;
     }
     .mobile-menu {
         @apply transition-all duration-300;
     }
+    /* tutup halaman file welcome */
 }
 
 #mobile-menu {
