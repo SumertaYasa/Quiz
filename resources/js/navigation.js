@@ -21,3 +21,28 @@ document.addEventListener('DOMContentLoaded', function() {
       closeBtn.addEventListener('click', closeSidebar); // Tutup sidebar
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButton = document.getElementById("dropdownButton");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  const icon = dropdownButton.querySelector('i');
+
+  dropdownButton.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+      if (dropdownMenu.classList.contains("hidden")) {
+        icon.classList.remove('bx-chevron-up');
+        icon.classList.add('bx-chevron-down');
+    } else {
+        icon.classList.remove('bx-chevron-down');
+        icon.classList.add('bx-chevron-up');
+    }
+  });
+
+  // Tutup dropdown jika klik di luar
+  window.addEventListener("click", function (event) {
+      if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+          dropdownMenu.classList.add("hidden");
+      }
+  });
+});
+

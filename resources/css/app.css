@@ -15,9 +15,9 @@
 
 @layer components {
     
-    /* .container {
-        @apply
-    } */
+    .b-container {
+        @apply max-w-[1100px] w-[calc(100%-2rem)] mx-auto;
+    }
 
     .flex-center {
         @apply flex justify-center items-center;
@@ -31,17 +31,12 @@
     }
     
     .icons {
-        @apply text-icon-mobile md:text-icon-tablet  font-normal;
+        @apply flex-center text-icon-mobile md:text-icon-tablet  font-normal;
     }
 
     /* komponen navigation */
-    .navbar {
-        @apply container flex justify-between border px-5 w-full items-center py-[15px] bg-white shadow-lg;
-    }
+
     
-    .sidebar {
-        @apply absolute left-[-300px] flex flex-col w-[300px] bg-[#2D2D91] h-screen text-white ease-in-out duration-300;
-    }
     
     
     /* welcome home */
@@ -54,33 +49,53 @@
     .navList-welcome:hover::after {
         @apply w-full;
     }
-
+    
 }
 
 @layer utilities {
     /* komponen navigation */
+    .l-navbar {
+        @apply w-full h-full bg-white shadow-lg;
+    }
+    
+    .nav {
+        @apply flex justify-between items-center h-[80px];
+    }
+
+    .sidebar {
+        @apply absolute lg:static z-0 left-[-300px] flex flex-col w-full max-w-[300px]  bg-[#2D2D91] h-screen text-white transition-all duration-300;
+    }
+
     .color-btn-menu {
-        @apply bg-[#2D2D91] text-white;
+        @apply bg-[#2D2D91] text-white text-[30px] lg:opacity-0 lg:pointer-events-none;
     }    
 
     .color-btn-navbar {
-        @apply text-[#424242]  bg-[#EBEBEB]
+        @apply text-[#424242] bg-[#EBEBEB]
     }
 
     .color-btn-close {
-        @apply bg-[#4545C1];
+        @apply hover:bg-[#4545C1] text-[30px] lg:opacity-0 lg:pointer-events-none;
     }
 
     .logo-sidebar {
-        @apply w-[45px] h-[45px] rounded-full;
+        @apply w-[40px] h-[40px] rounded-full;
     }
 
     .menu-sidebar {
-        @apply *:flex *:justify-start *:items-center *:my-[12px] *:py-2 *:px-4 *:text-mobile-heading *:md:text-tablet-heading *:font-medium *:w-[250px] *:rounded-lg
+        @apply *:flex *:justify-start *:items-center *:my-[12px] *:py-2 *:px-4 *:text-[16px] *:md:text-tablet-heading *:font-medium *:w-[250px] *:rounded-lg
     }
 
     .span-menu {
-        @apply text-[20px] font-light pb-[15px]
+        @apply text-[20px] px-4 font-light pb-[15px]
+    }
+
+    .dropMenu-list {
+        @apply flex items-center px-4 py-2 text-[20px] font-medium text-gray-700 hover:text-[#2D2D91];
+    }
+
+    .logout {
+        @apply text-[#D83538] hover:text-[#B52628];
     }
     /* tutup komponen navigation */
 

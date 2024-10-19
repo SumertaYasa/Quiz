@@ -27,6 +27,7 @@ export default {
         roboto: ['Roboto']
       },
       screens: {
+        'md': '650px',
         'lg-lite': '930px'
       }
     },
