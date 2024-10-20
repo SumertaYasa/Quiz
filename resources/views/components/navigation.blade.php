@@ -43,7 +43,7 @@
                 <div class="flex gap-[15px]">
                     <div class="hidden md:flex-col md:flex">
                         {{-- menampilkan nama panggilan pengguna --}}
-                        <h1 class="font-semibold text-mobile-heading ">putri </h1>
+                        <h1 class="font-semibold text-right text-mobile-heading">putri </h1>
                         {{-- Menampilkabn Role seperti "mahasiswa 3C TRPL" --}}
                         <span class="font-normal ">Kelas 3C</span>
                     </div>
