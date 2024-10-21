@@ -10,6 +10,19 @@
 <body>
   <x-navigation />
   
+  <main class="dashboard-content">
+    {{-- logic role untuk menampilkan dashboard sesuai role --}}
+    {{-- 
+      @if(auth()->user()->role == 'admin')
+        @include('components.dashboard-admin')
+      @elseif(auth()->user()->role == 'dosen')
+        @include('components.dashboard-dosen')
+      @elseif(auth()->user()->role == 'mahasiswa')
+        @include('components.dashboard-mahasiswa')
+      @endif
+    --}}
+  </main>
+
   @vite('resources/js/navigation.js')
 </body>
 </html>

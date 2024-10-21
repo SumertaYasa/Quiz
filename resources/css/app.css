@@ -31,13 +31,15 @@
     }
     
     .icons {
-        @apply flex-center text-icon-mobile md:text-icon-tablet  font-normal;
+        @apply flex-center text-icon-mobile font-normal;
+    }
+
+    .cards {
+        @apply 
     }
 
     /* komponen navigation */
 
-    
-    
     
     /* welcome home */
     .navList-welcome {
@@ -59,11 +61,11 @@
     }
     
     .nav {
-        @apply flex justify-between items-center h-[80px];
+        @apply flex justify-between items-center h-[80px] md:h-[70px];
     }
 
     .sidebar {
-        @apply absolute lg:static z-0 left-[-300px] flex flex-col w-full max-w-[300px]  bg-[#2D2D91] h-screen text-white transition-all duration-300;
+        @apply absolute lg:static z-10 left-[-300px] flex flex-col w-full max-w-[300px]  bg-[#2D2D91] h-screen text-white transition-all duration-300;
     }
 
     .color-btn-menu {
