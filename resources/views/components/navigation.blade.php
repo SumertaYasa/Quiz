@@ -48,19 +48,19 @@
                         <span class="font-normal ">Kelas 3C</span>
                     </div>
                     <div>
-                        <button id="dropdownButton" class="flex-center gap-[10px]">
+                        <button id="dropdownButton" class="flex-center pt-1 gap-[10px]">
                             <img class="w-[50px] h-[50px] rounded-full" src="https://randomuser.me/api/portraits/women/85.jpg" alt="">
                             
                             <div class="hidden md:flex">
                                 <i class='icons bx bx-chevron-down'></i>
                             </div>
                         </button>
-                        <div id="dropdownMenu" class="absolute right-[20px] hidden w-[250px] mt-[15px] bg-white rounded-b-md shadow-lg">
+                        <div id="dropdownMenu" class="absolute right-[20px] hidden w-[250px] mt-[5px] bg-white rounded-b-md shadow-lg">
                             <div class="py-3 border-b " role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
                                 <a href="#" class="dropMenu-list" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bxs-user'></i>profil saya</a>
                                 <a href="#" class="dropMenu-list" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bxs-cog' ></i>pengaturan</a>
                             </div>
-                                <a href="#" class="dropMenu-list logout" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bx-exit' ></i>keluar</a>
+                                <a href="views/welcome.blade.php" class="dropMenu-list logout" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bx-exit' ></i>keluar</a>
                         </div>
                     </div>
                 </div>
