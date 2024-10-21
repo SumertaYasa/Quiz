@@ -55,9 +55,12 @@
             </button>
         </form>
         
-        <div class="mt-4 text-center">
+        <div class="mt-4 text-center flex flex-col gap-y-2">
             <a href="" class="text-sm text-blue-600 hover:underline">
                 Forget Password?
+            </a>
+            <a href="/" class="text-sm text-blue-600 hover:underline font-bold">
+                Kembali ke Beranda
             </a>
         </div>
     </div>
