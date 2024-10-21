@@ -10,8 +10,8 @@ Route::get('/dashboard', function () {
     return view('layout/app');
 });
 
-Route::get('/mahasiswa/login', function () {
-    return view('mahasiswa/login');
+Route::get('/login', function () {
+    return view('login');
 });
 
 

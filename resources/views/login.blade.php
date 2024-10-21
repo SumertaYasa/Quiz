@@ -22,7 +22,7 @@
             </div>
         @endif
         
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="">
             @csrf
             <div class="mb-4">
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
@@ -56,7 +56,7 @@
         </form>
         
         <div class="mt-4 text-center">
-            <a href="{{ route('password.request') }}" class="text-sm text-blue-600 hover:underline">
+            <a href="" class="text-sm text-blue-600 hover:underline">
                 Forget Password?
             </a>
         </div>
