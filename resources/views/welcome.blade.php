@@ -23,7 +23,7 @@
                 </div>
                 <div class="items-center hidden space-x-6 lg-lite:flex">
                     <a href="#" class="font-semibold text-white hover:text-gray-400">Cari Quiz</a>
-                    <a href="#" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
+                    <a href="/mahasiswa/login" class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Masuk</a>
                 </div>
                 <div class="lg-lite:hidden">
                     <button id="mobile-menu-button" class="text-white">

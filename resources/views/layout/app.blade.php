@@ -8,7 +8,7 @@
   @vite('resources/css/app.css')
 </head>
 <body>
-  @include('components.navigation')
+  <x-navigation />
   
   @vite('resources/js/navigation.js')
 </body>
