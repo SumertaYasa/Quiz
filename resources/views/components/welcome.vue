@@ -1,5 +1,4 @@
 <template>
-    <div>
         <nav class="nav-welcome">
         <div class="mx-auto max-w-7xl mobile-menu">
             <div class="flex items-center justify-between">
@@ -184,5 +183,4 @@
             <p>&copy; 2024 PNB Quiz. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
-    </div>
 </template> 

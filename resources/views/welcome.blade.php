@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNB Quiz - Platform Quiz Interaktif Politeknik Negeri Bali</title>
     @vite('resources/css/app.css')
-    @vite('resources/js/welcome.js')
+    @vite('resources/js/vue.js')
 </head>
 <body class="bg-white">
     <div id="welcome"></div>

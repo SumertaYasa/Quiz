@@ -1,10 +1,3 @@
-// component welcome
-
-import { createApp } from 'vue';
-import Welcome from '../views/components/welcome.vue';
-
-createApp(Welcome).mount('#welcome');
-
 // responsive navbarnya
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
