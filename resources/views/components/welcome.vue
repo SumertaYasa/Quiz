@@ -17,11 +17,13 @@
               <a href="#" class="font-semibold text-white hover:text-gray-400"
                 >Cari Quiz</a
               >
-              <a
+              <router-link>
+                <a
                 href="/login"
                 class="px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700"
                 >Masuk</a
               >
+              </router-link>
             </div>
             <div class="lg-lite:hidden">
               <button id="mobile-menu-button" class="text-white">
