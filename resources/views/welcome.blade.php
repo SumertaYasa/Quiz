@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/vue.js')
 </head>
-<body class="bg-white">
+<body>
     <div id="welcome"></div>
 </body>
 </html>
