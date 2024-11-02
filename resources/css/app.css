@@ -40,6 +40,15 @@
 
     /* komponen navigation */
 
+    /* komponen settings */
+    .label-form {
+        @apply text-[15px]
+    }
+
+    .input-form {
+        @apply h-[30px] ring-[#798AE8] ring-1 rounded-md mb-[15px]
+    }
+    /* tutup komponen settings */
     
     /* welcome home */
     .navList-welcome {
@@ -57,7 +66,7 @@
 @layer utilities {
     /* komponen navigation */
     .l-navbar {
-        @apply w-full h-full bg-white shadow-lg;
+        @apply w-full bg-white shadow-lg;
     }
     
     .nav {
@@ -65,7 +74,7 @@
     }
 
     .sidebar {
-        @apply absolute lg:static z-10 left-[-300px] flex flex-col w-full max-w-[300px]  bg-[#2D2D91] h-screen text-white transition-all duration-300;
+        @apply fixed lg:static z-10 left-[-300px] flex flex-col w-full max-w-[300px]  bg-[#2D2D91] h-screen text-white transition-all duration-300;
     }
 
     .color-btn-menu {

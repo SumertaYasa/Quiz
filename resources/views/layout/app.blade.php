@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>dashboard</title>
-  @vite(['resources/js/sidebar.js', 'resources/js/vue.js','resources/css/app.css'])
+  @vite('resources/css/app.css')
   
 </head>
 <body>
   
-  <div id="id">
-    <sidebar></sidebar>
-
-  </div>
+  <div id="navigasi"></div>
+  
+  @vite('resources/js/vue.js')
+  @vite('resources/js/sidebar.js')
 
 </body>
 </html>

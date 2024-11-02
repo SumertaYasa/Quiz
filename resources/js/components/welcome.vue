@@ -105,7 +105,7 @@
                 - Platform quiz interaktif terbaik untuk mahasiswa PNB
               </p>
               <p
-                class="mb-8 text-lg border rounded-xl p-2 w-full lg-lite:min-w-[300px]"
+                class="mb-8 text-lg rounded-xl p-2 w-full lg-lite:min-w-[300px]"
               >
                 Akses berbagai jenis quiz, tantang teman-temanmu, dan tingkatkan
                 pemahamanmu tentang materi kuliah melalui quiz yang menyenangkan
