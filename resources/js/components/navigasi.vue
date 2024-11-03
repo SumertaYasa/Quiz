@@ -45,8 +45,6 @@
                                     <div class="py-3 border-b " role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
                                         <!-- <router-link ></router-link> -->
                                         <router-link to="/pengaturan" class="dropMenu-list"><i class='text-icon-mobile pr-[20px] bx bxs-cog' ></i>pengaturan</router-link>
-                                        <!-- <a href="#" class="dropMenu-list" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bxs-user'></i>profil saya</a>
-                                        <a href="" class="dropMenu-list" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bxs-cog' ></i>pengaturan</a> -->
                                     </div>
                                         <a href="views/welcome.blade.php" class="dropMenu-list logout" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bx-exit' ></i>keluar</a>
                                 </div>

@@ -26,22 +26,39 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownButton = document.getElementById("dropdownButton");
   const dropdownMenu = document.getElementById("dropdownMenu");
   const icon = dropdownButton.querySelector('i');
+  const dropdownItems = document.querySelectorAll(".dropMenu-list");
 
-  dropdownButton.addEventListener("click", function () {
-      dropdownMenu.classList.toggle("hidden");
-      if (dropdownMenu.classList.contains("hidden")) {
-        icon.classList.remove('bx-chevron-up');
-        icon.classList.add('bx-chevron-down');
+  // Toggle dropdown saat tombol ditekan
+  dropdownButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    dropdownMenu.classList.toggle("hidden");
+
+    // Ubah ikon berdasarkan kondisi dropdown
+    if (dropdownMenu.classList.contains("hidden")) {
+      icon.classList.remove('bx-chevron-up');
+      icon.classList.add('bx-chevron-down');
     } else {
-        icon.classList.remove('bx-chevron-down');
-        icon.classList.add('bx-chevron-up');
+      icon.classList.remove('bx-chevron-down');
+      icon.classList.add('bx-chevron-up');
     }
   });
 
-  // Tutup dropdown jika klik di luar
+  // Tutup dropdown jika pengguna mengklik di luar
   window.addEventListener("click", function (event) {
-      if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-          dropdownMenu.classList.add("hidden");
-      }
+    if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+      dropdownMenu.classList.add("hidden");
+      icon.classList.remove('bx-chevron-up');
+      icon.classList.add('bx-chevron-down');
+    }
+  });
+
+  // Tutup dropdown saat salah satu item di dalamnya diklik
+  dropdownItems.forEach(item => {
+    item.addEventListener("click", function () {
+      dropdownMenu.classList.add("hidden");
+      icon.classList.remove('bx-chevron-up');
+      icon.classList.add('bx-chevron-down');
+    });
   });
 });
+

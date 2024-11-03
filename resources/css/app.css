@@ -8,7 +8,7 @@
 
 @layer base {
     body {
-        @apply font-roboto text-mobile-base md:text-tablet-base lg:text-desktop-base;
+        @apply bg-[#F4F4F4] font-roboto text-mobile-base md:text-tablet-base lg:text-desktop-base;
     }
     
 }
@@ -46,7 +46,7 @@
     }
 
     .input-form {
-        @apply h-[30px] ring-[#798AE8] ring-1 rounded-md mb-[15px]
+        @apply block h-[30px] ring-[#798AE8] ring-1 rounded-md mb-[15px] p-1 focus:ring-2 focus:border-blue-500 focus:outline-none bg-[#E1E3FF] text-gray-600
     }
     /* tutup komponen settings */
     
