@@ -12,8 +12,7 @@
             <div class="pl-[20px]">
                 <span class="span-menu">menu</span>
                 <ul class="menu-sidebar">
-                    <li class="hover:bg-[#4545C1] "><a class="flex-center" href=""><i class='icons pr-[20px] bx bxs-home'></i>dashboard</a></li>
-                    
+                    <router-link to="/table" class="hover:bg-[#4545C1] flex-center"><i class='icons pr-[20px] bx bxs-home'></i>dashboard</router-link>
                 </ul>
 
             </div>
@@ -41,7 +40,7 @@
                                         <i class='icons bx bx-chevron-down'></i>
                                     </div>
                                 </button>
-                                <div id="dropdownMenu" class="absolute right-[20px] hidden w-[250px] mt-[5px] bg-white rounded-b-md shadow-lg">
+                                <div id="dropdownMenu" class="absolute right-[20px] z-50 hidden w-[250px] mt-[5px] bg-white rounded-b-md shadow-lg">
                                     <div class="py-3 border-b " role="menu" aria-orientation="vertical" aria-labelledby="dropdownButton">
                                         <!-- <router-link ></router-link> -->
                                         <router-link to="/pengaturan" class="dropMenu-list"><i class='text-icon-mobile pr-[20px] bx bxs-cog' ></i>pengaturan</router-link>
