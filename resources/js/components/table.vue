@@ -1,6 +1,7 @@
 <template>
   <div class="mx-[40px] my-[20px]">
     <h1 class="text-[30px] font-medium">Tabel</h1>
+    <!-- <h1 class="text-[30px] font-medium">{{ title }}</h1> -->
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
       <table class="w-full text-sm text-left text-gray-500 ">
           <thead class="text-xs text-gray-700 uppercase bg-gray-300 ">
@@ -10,10 +11,15 @@
                   <th scope="col" class="px-6 py-3">Kelas</th>
                   <th scope="col" class="px-6 py-3">Prodi</th>
                   <th scope="col" class="px-6 py-3">Aksi</th>
+                  <!--  <th v-for="(col, index) in columns" :key="index" :scope="col" :class="px-6 py-3">{{ col }}</th> -->
               </tr>
           </thead>
           <tbody>
-              <tr class=" odd:bg-white even:bg-gray-50 dark:border-gray-700">
+              <!-- <tr v-for="(item, index) in data" :key="index" :class="odd:bg-white even:bg-gray-50 dark:border-gray-700">
+                <td v-for="(col, colIndex) in columns" :key="colIndex" :class="colIndex === 0 ? 'px-6 py-4 font-medium text-gray-900 whitespace-nowrap' : 'px-6 py-4'">{{ item[col] }}</td>
+                
+              </tr> -->
+              <tr class="odd:bg-white even:bg-gray-50 dark:border-gray-700">
                   <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">Bambang</th>
                   <td class="px-6 py-4">009</td>
                   <td class="px-6 py-4">3F</td>

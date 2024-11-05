@@ -45,7 +45,7 @@
                                         <!-- <router-link ></router-link> -->
                                         <router-link to="/pengaturan" class="dropMenu-list"><i class='text-icon-mobile pr-[20px] bx bxs-cog' ></i>pengaturan</router-link>
                                     </div>
-                                        <a href="views/welcome.blade.php" class="dropMenu-list logout" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bx-exit' ></i>keluar</a>
+                                        <a href="/" class="dropMenu-list logout" role="menuitem"><i class='text-icon-mobile pr-[20px] bx bx-exit' ></i>keluar</a>
                                 </div>
                             </div>
                         </div>
