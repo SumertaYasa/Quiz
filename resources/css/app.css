@@ -14,7 +14,7 @@
 }
 
 @layer components {
-    
+
     .b-container {
         @apply max-w-[1100px] w-[calc(100%-2rem)] mx-auto;
     }
@@ -23,8 +23,16 @@
         @apply flex justify-center items-center;
     }
 
+    .title-section {
+        @apply font-medium text-[22px] mb-[10px] lg:text-[30px];
+    }
+
+    .subtitle-section {
+        @apply text-[18px] font-medium lg:text-[24px]
+    }
+
     .btn {
-        @apply w-[35px] h-[35px] flex-center rounded-md
+        @apply w-[35px] h-[35px] p-[20px] flex-center rounded-md
     }
     .btn-full { 
         @apply w-[35px] h-[35px] rounded-full;
@@ -41,8 +49,9 @@
     /* komponen navigation */
 
     /* komponen settings */
+    
     .label-form {
-        @apply text-[15px]
+        @apply text-[15px] lg:text-[18px]
     }
 
     .input-form {

@@ -1,9 +1,9 @@
 <template>
   <div class="mx-[20px] my-[20px] h-max lg:mb-[10px] lg:mx-[40px]">
-    <h1 class="font-medium text-[22px] mb-[10px]">Pengaturan</h1>
+    <h1 class="title-section">Pengaturan</h1>
     <div class="flex flex-col lg:flex-row gap-[15px] lg:justify-center">
       <div id="info-pengguna" class="border border-[#C5CEFF] rounded-lg mb-[15px] w-full lg:max-w-[400px] lg:max-h-[450px] bg-white drop-shadow-[0_0_18px_rgba(76,92,180,.25)]">
-        <h2 class="text-[18px] mx-[20px] my-[10px] font-medium">informasi pengguna</h2>
+        <h2 class="subtitle-section mx-[20px] my-[10px]">informasi pengguna</h2>
         <form action="" method="post" class="flex flex-col text-[14px] mx-[20px]">
           <div class="flex flex-col lg:flex-row gap-[10px]">
             <div class="lg:flex-col lg:flex lg:w-[250px]">
@@ -27,6 +27,7 @@
         </form>
       </div>
       <div id="foto-pengguna" class="border border-[#C5CEFF] rounded-lg w-full h-full lg:max-w-[300px] lg:max-h-[357px] bg-white drop-shadow-[0_0_18px_rgba(76,92,180,.25)]">
+        <h2 class="subtitle-section mx-[20px] my-[10px]">profil pengguna</h2>
         <div class="">
           <img class="w-[200px] h-[200px] my-[30px] mx-auto rounded-full" src="https://randomuser.me/api/portraits/women/85.jpg" alt="">
           <form class="hidden" action="" method="post">
